@@ -91,7 +91,7 @@
 
     <!-- creation section  -->
     <section id="creation-section">
-      <div class="container max-w-6xl mx-auto my-12 md:pe-6">
+      <div class="container max-w-6xl mx-auto my-32 md:pe-6 px-5">
         <div class="flex md:justify-between mb-10">
           <h2 class="text-5xl font-light uppercase mx-auto md:mx-0">
             Our Creation
@@ -105,7 +105,31 @@
 
         <!-- items container  -->
         <div class="flex flex-col md:flex-row">
-          <div class="group"></div>
+          <div class="group relative">
+            <!-- image of md :  -->
+            <img
+              src="../public/images/desktop/image-deep-earth.jpg"
+              class="w-full hidden md:block group-hover:scale-105"
+              alt=""
+            />
+            <!-- image of mobile  -->
+            <img
+              src="../public/images/mobile/image-deep-earth.jpg"
+              class="w-full md:hidden"
+              alt=""
+            />
+            <!-- gradien  -->
+            <div
+              class="absolute right-0 left-0 top-0 bottom-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:opacity-70 group-hover:to-white"
+            ></div>
+
+            <!-- text  -->
+            <h3
+              class="absolute bottom-1 text-white p-4 text-2xl group-hover:scale-105 font-light"
+            >
+              Deep Hearth
+            </h3>
+          </div>
           <div class="group"></div>
           <div class="group"></div>
           <div class="group"></div>
