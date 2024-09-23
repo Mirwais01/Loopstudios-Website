@@ -5,14 +5,14 @@
 @tailwind utilities;
 
 #hero-section {
-  background-image: url("../public/images/desktop/image-hero.jpg");
+  background-image: url("public/images/desktop/image-hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 @media (max-width: 576px) {
   #hero-section {
-    background-image: url("../public/images/mobile/image-hero.jpg");
+    background-image: url("public/images/mobile/image-hero.jpg");
     background-position: center;
   }
 }
