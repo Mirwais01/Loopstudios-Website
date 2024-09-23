@@ -16,3 +16,44 @@
     background-position: center;
   }
 }
+
+/* Hamburger menu */
+.humberger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.2s;
+  position: relative;
+}
+.humberger-top,
+.humberger-bottom,
+.humberger-middle {
+  position: absolute;
+  background-color: #fff;
+  top: 4px;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  transition: all 0.2s;
+}
+.humberger-top {
+  transform: translateY(7px);
+}
+.humberger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+}
+.open .humberger-top {
+  transform: rotate(45deg) translateX(6px) translateY(6px);
+}
+
+.open .humberger-middle {
+  display: none;
+}
+
+.open .humberger-bottom {
+  transform: rotate(-45deg) translateX(-6px) translateY(6px);
+}

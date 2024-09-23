@@ -52,9 +52,31 @@
           </div>
 
           <!-- menu hamberger button  -->
+
+          <div class="md:hidden">
+            <button
+              type="button"
+              id="menu-btn"
+              class="z-40 block humberger focus:outline-none md:hidden"
+            >
+              <span class="humberger-top"></span>
+              <span class="humberger-middle"></span>
+              <span class="humberger-bottom"></span>
+            </button>
+          </div>
         </nav>
         <!-- menu of mobile screen  -->
-
+        <div
+          id="menu"
+          class="absolute left-0 top-0 bottom-0 bg-black hidden flex-col w-full min-h-screen self-end py-1 pt-40 text-white uppercase text-lg space-y-3 pl-12"
+        >
+          <a href="" class="hover:text-pink-500">Home</a>
+          <a href="" class="hover:text-pink-500">About</a>
+          <a href="" class="hover:text-pink-500">Contact</a>
+          <a href="" class="hover:text-pink-500">Product</a>
+          <a href="" class="hover:text-pink-500">Carrese</a>
+          <a href="" class="hover:text-pink-500">Events</a>
+        </div>
         <div
           class="max-w-lg text-white mt-32 mb-32 p-4 border-2 font-light text-3xl md:text-6xl uppercase md:p-10 text-justify md:mx-0 md:m-32"
         >
@@ -380,5 +402,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="my-script.js"></script>
   </body>
 </html>
